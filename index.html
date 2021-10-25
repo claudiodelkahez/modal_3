@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal window</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/257363870e.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <div class="producto">
+        <!-- titulo producto -->
+        <h2 class="producto_titulo">CHEESEBURGER</h2>
+        <!-- imagen producto -->
+        <a class="button" href="#modal1">
+            <img class="producto_imagen" src="https://i.postimg.cc/kXv844br/thefriendsburgers.png" alt="" />
+        
+        </a>
+        <!-- descripcion producto -->
+        <div class="producto_descripcion">
+            <p>Carne - Cheddar </p>
+            <p class="producto_precio">simple $500 - doble $600 - triple $700</p>
+        </div>
+
+        <!-- ventana modal -->
+        <div class="popup" id="modal1">
+            <a class="popup__overlay" href="#"></a>
+            <div class="popup__wrapper">
+
+                <a class="popup__close" href="#">X</a>
+                <div class="contenido_modal">
+            
+                    <div class="contenedor-imagen_modal">
+                        <img src="https://via.placeholder.com/600.png" alt="" />
+                    </div>
+           
+                   <div class="contenedor-info">
+                    <div class="descripcion_producto">
+                        <h2 class="descipcion_producto-titulo">THE FRIENDS BURGERS</h2>
+
+                        <p descripcion_producto> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, iste molestias itaque aut magni doloremque sed, natus nihil provident doloribus debitis aliquam quasi omnis fuga earum alias, eveniet unde illo.</p>
+
+                       
+                   </div>
+
+                   <a class="boton_whatsapp" href="#">PEDILA YAAAAA</a>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="producto">
+    <a class="button" href="#modal2"><img class="producto_imagen" src="https://i.postimg.cc/5tmWGL0p/cheese.jpg" alt="" /></a>
+
+    <div class="popup" id="modal2">
+        <a class="popup__overlay" href="#"></a>
+        <div class="popup__wrapper">
+            <a class="popup__close" href="#">X</a>
+            <p>POPUP 2 : CONTENT HERE</p>
+            <img src="https://via.placeholder.com/600.png" alt="" />
+        </div>
+    </div>
+    </div>
+
+    <div class="producto">
+    <a class="button" href="#modal3"><img class="producto_imagen" src="https://i.postimg.cc/JzZLN9Cf/tastybacon.jpg" alt="" /></a>
+
+    <div class="popup" id="modal3">
+        <a class="popup__overlay" href="#"></a>
+        <div class="popup__wrapper">
+            <a class="popup__close" href="#">X</a>
+            <p>POPUP 2 : CONTENT HERE</p>
+            <img src="https://i.postimg.cc/JzZLN9Cf/tastybacon.jpg" alt="" />
+        </div>
+    </div>
+    </div>
+
+    <div class="producto">
+    <a class="button" href="#modal4"><img class="producto_imagen" src="https://i.postimg.cc/kGz08y1M/biglove.jpg " alt="" /></a>
+
+    <div class="popup" id="modal4">
+        <a class="popup__overlay" href="#"></a>
+        <div class="popup__wrapper">
+            <a class="popup__close" href="#">X</a>
+            <p>POPUP 2 : CONTENT HERE</p>
+            <img src="https://i.postimg.cc/kGz08y1M/biglove.jpg" alt="" />
+        </div>
+    </div>
+    </div>
+
+</div>
+
+<div class="botonflotante">
+    <a href="https://wa.me/message/FHS2SGO7SAZDD1" class="btn_whatsapp" target="_blank"> <i class="fab fa-whatsapp"></i></a>
+</div>
+
+</body>
+
+</html>
