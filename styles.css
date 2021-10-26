@@ -25,7 +25,6 @@ h1 {
 section {
     width: 100%;
     max-width: 800px;
-    background-color: aquamarine;
 }
 /* ESTILOS PRODUCTOS */
 
@@ -40,21 +39,24 @@ section {
 }
 
 .producto_titulo {
-    padding: 1rem 0rem;
+    padding-bottom: 1em;
 }
-
+.contenedor-producto_imagen {
+    height: 150px;
+    transform: scale(1);
+}
+.contenedor-producto_imagen:hover {
+    transform: scale(1.1);
+}
 .producto_imagen {
-    height: 200px;
-    width: 200px;
     border-radius: 50%;
+    height: 100%;
+    object-fit: contain;
     object-position: center;
-    object-fit: cover;
 }
 
 .producto_descripcion {
     text-align: center;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
     margin-top: 1rem;
 }
 .producto_precio {
@@ -81,7 +83,7 @@ input[type="checkbox"] {
     clip: rect(0 0 0 0);
 }
 .popup {
-    width: 100%;
+   width: 100%;
     height: 100%;
     z-index: 99999;
 }
@@ -93,42 +95,48 @@ input[type="checkbox"] {
     left: 0;
     height: 100%;
     width: 100%;
-    background: #000000e8;
+    background: #000000bd;
 }
 .popup__wrapper {
+    
+
     position: fixed;
-    z-index: 9;
-    max-width: 1000px;
-    width: 95%;
-    height: 95%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 9;
+
+
+    height: 90%;
+    width: 90%;
     border-radius: 8px;
 
     background: #fff;
 }
 .popup__close {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     position: absolute;
-    right: 8px;
+    top: 4px;
+    right: 7px;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     transform: scale(1);
-    font-family: "Poppins", sans-serif;
+    font-family: sans-serif;
 }
 .popup__close-background {
     position: absolute;
     top: 0px;
     right: 0px;
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
     width: 20px;
     padding: 15px;
     height: 20px;
     border-radius: 50%;
 }
 .popup__close:visited {
-    color: #000000;
+    color: #fff;
+
 }
 
 .popup__close:focus,
@@ -143,10 +151,10 @@ input[type="checkbox"] {
     flex-direction: column;
     align-items: center;
     height: 100%;
+
 }
 
 .contenedor-imagen_modal {
-
     height: 50%;
     margin-bottom: 1rem;
     overflow: hidden;
@@ -175,7 +183,6 @@ input[type="checkbox"] {
 .contenedor-boton_whatsapp {
     display: flex;
     justify-content: center;
-
 }
 .boton_whatsapp {
     background-color: #46c756;
@@ -183,6 +190,10 @@ input[type="checkbox"] {
     border-radius: 0.5rem;
     text-decoration: none;
     font-weight: bold;
+    transform: scale(1);
+}
+.boton_whatsapp:hover {
+    transform: scale(1.1);
 }
 .boton_whatsapp:visited {
     color: white;
@@ -197,7 +208,7 @@ input[type="checkbox"] {
     bottom: 15px;
     right: 15px;
     background: #46c756;
-    columns: #fff;
+    color: #fff;
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
@@ -272,7 +283,6 @@ input[type="checkbox"] {
         font-size: 1.4rem;
     }
 
-    
     .contenedor-boton_whatsapp {
         display: flex;
         justify-content: center;
@@ -285,7 +295,6 @@ input[type="checkbox"] {
     }
 }
 @media screen and (min-width: 1024px) {
-
     .popup__wrapper {
         max-height: 600px;
         max-width: 1200px;
@@ -295,6 +304,5 @@ input[type="checkbox"] {
     }
     .descripcion_producto {
         padding: 3rem;
-        
     }
 }
