@@ -27,13 +27,14 @@
     <body>
         <header>
             <div class="cabecera">
-                <h1>titulo</h1>
+                <h1>THE FRIENDS BURGERS</h1>
+                <h3>FOOD LOVERS</h3>
             </div>
         </header>
         <section>
             <div class="producto">
                 <!-- titulo producto -->
-                <h2 class="producto_titulo">CHEESEBURGER</h2>
+                <h2 class="producto_titulo" id="producto1">CHEESEBURGER</h2>
                 <!-- imagen producto -->
                 <a class="button" href="#modal1">
                     <div class="contenedor-producto_imagen">
@@ -57,13 +58,10 @@
                     <a class="popup__overlay" href="#"></a>
                     <div class="popup__wrapper">
                         <div class="popup__close-background"></div>
-                        <a class="popup__close" href="#">X</a>
+                        <a class="popup__close" href="#producto1">X</a>
                         <div class="contenido_modal">
                             <div class="contenedor-imagen_modal">
-                                <img
-                                    src="./imgs/friedchicken.jpg"
-                                    alt=""
-                                />
+                                <img src="./imgs/friedchicken.jpg" alt="" />
                             </div>
 
                             <div class="contenedor-info">
@@ -95,7 +93,7 @@
 
             <div class="producto">
                 <!-- titulo producto -->
-                <h2 class="producto_titulo">CHEESEBURGER</h2>
+                <h2 class="producto_titulo" id="producto2">TASTY BACON</h2>
                 <!-- imagen producto -->
                 <a class="button" href="#modal2">
                     <div class="contenedor-producto_imagen">
@@ -119,28 +117,23 @@
                     <a class="popup__overlay" href="#"></a>
                     <div class="popup__wrapper">
                         <div class="popup__close-background"></div>
-                        <a class="popup__close" href="#">X</a>
+                        <a class="popup__close" href="#producto2">X</a>
                         <div class="contenido_modal">
                             <div class="contenedor-imagen_modal">
-                                <img
-                                    src="./imgs/friedchicken.jpg"
-                                    alt=""
-                                />
+                                <img src="./imgs/friedchicken.jpg" alt="" />
                             </div>
 
                             <div class="contenedor-info">
                                 <div class="descripcion_producto">
                                     <h2 class="descipcion_producto-titulo">
-                                        THE FRIENDS BURGERS
+                                        TASTY BACON
                                     </h2>
 
                                     <p class="descripcion_producto-texto">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. Dolor, iste molestias
-                                        itaque aut magni doloremque sed, natus
-                                        nihil provident doloribus debitis
-                                        aliquam quasi omnis fuga earum alias,
-                                        eveniet unde illo.
+                                        Carne - Cheddar - Panceta ahumada - BBQ
+                                    </p>
+                                    <p class="descripcion_producto-precio">
+                                        simple $540 - doble $640 - triple $730
                                     </p>
                                 </div>
 
@@ -184,10 +177,7 @@
                         <a class="popup__close" href="#">X</a>
                         <div class="contenido_modal">
                             <div class="contenedor-imagen_modal">
-                                <img
-                                    src="./imgs/friedchicken.jpg"
-                                    alt=""
-                                />
+                                <img src="./imgs/friedchicken.jpg" alt="" />
                             </div>
 
                             <div class="contenedor-info">
@@ -219,7 +209,7 @@
 
             <div class="producto">
                 <!-- titulo producto -->
-                <h2 class="producto_titulo">CHEESEBURGER</h2>
+                <h2 class="producto_titulo">BIG LOVE</h2>
                 <!-- imagen producto -->
                 <a class="button" href="#modal4">
                     <div class="contenedor-producto_imagen">
@@ -240,16 +230,13 @@
 
                 <!-- ventana modal -->
                 <div class="popup" id="modal4">
-                    <a class="popup__overlay" href="#"></a>
+                    <a class="popup__overlay" href="modal4"></a>
                     <div class="popup__wrapper">
                         <div class="popup__close-background"></div>
                         <a class="popup__close" href="#">X</a>
                         <div class="contenido_modal">
                             <div class="contenedor-imagen_modal">
-                                <img
-                                    src="./imgs/friedchicken.jpg"
-                                    alt=""
-                                />
+                                <img src="./imgs/friedchicken.jpg" alt="" />
                             </div>
 
                             <div class="contenedor-info">
@@ -278,7 +265,65 @@
                     </div>
                 </div>
             </div>
+
+            <div class="producto">
+                <!-- titulo producto -->
+                <h2 class="producto_titulo">WHOPPER</h2>
+                <!-- imagen producto -->
+                <a class="button" href="#modal4">
+                    <div class="contenedor-producto_imagen">
+                        <img
+                            class="producto_imagen"
+                            src="./imgs/friedchicken.jpg"
+                            alt=""
+                        />
+                    </div>
+                </a>
+                <!-- descripcion producto -->
+                <div class="producto_descripcion">
+                    <p>Carne - Cheddar</p>
+                    <p class="producto_precio">
+                        simple $500 - doble $600 - triple $700
+                    </p>
+                </div>
+
+                <!-- ventana modal -->
+                <div class="popup" id="modal4">
+                    <a class="popup__overlay" href="modal4"></a>
+                    <div class="popup__wrapper">
+                        <div class="popup__close-background"></div>
+                        <a class="popup__close" href="#">X</a>
+                        <div class="contenido_modal">
+                            <div class="contenedor-imagen_modal">
+                                <img src="./imgs/friedchicken.jpg" alt="" />
+                            </div>
+
+                            <div class="contenedor-info">
+                                <div class="descripcion_producto">
+                                    <h2 class="descipcion_producto-titulo">
+                                        WHOPPER
+                                    </h2>
+
+                                    <p class="descripcion_producto-texto">
+                                        Carne - Cheddar - Lechuga - Tomate -
+                                        Cebolla morada - Mayonesa
+                                        <br />simple $500 - doble $600 - triple
+                                        $700
+                                    </p>
+                                </div>
+
+                                <div class="contenedor-boton_whatsapp">
+                                    <a class="boton_whatsapp" href="#"
+                                        >PEDILA YAAAAA</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <div class="botonflotante">
             <a
                 href="https://wa.me/message/FHS2SGO7SAZDD1"
@@ -289,4 +334,40 @@
             ></a>
         </div>
     </body>
+    <footer>
+        <div class="contacto">
+            <div class="nuestras_redes">
+                <span class="footer_titulo"
+                    >Buscanos también en nuestras redes sociales!</span
+                >
+            </div>
+            <div class="social_media">
+                <a
+                    href="https://www.facebook.com/thefriendsburgers/"
+                    target="_blank"
+                    ><div class="icon facebook">
+                        <div class="tooltip">
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a
+                    href="https://www.instagram.com/thefriendsburgers/"
+                    target="_blank"
+                    ><div class="icon instagram">
+                        <div class="tooltip">
+                            <span> <i class="fab fa-instagram"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="creditos" hidden>
+            <span>
+                <a class="creditos_link" href="https://menucito.com.ar" target="_blank">Menucito.com.ar</a>
+            </span>
+        </div>
+    </footer>
 </html>

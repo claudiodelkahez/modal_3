@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -14,7 +13,7 @@ body {
 header {
     width: 100%;
     height: 300px;
-    background-color: sienna;
+    background-color: rgb(0, 0, 0);
 }
 
 h1 {
@@ -165,14 +164,23 @@ input[type="checkbox"] {
     padding: 0rem 1rem 1rem 1rem;
 }
 .descipcion_producto-titulo {
-    margin-top: 1em;
     margin-bottom: 1em;
     font-size: 1.4rem;
+    text-align: center;
+    color: brown;
 }
 .descripcion_producto {
+    text-align: center;
+    padding-top: 1em;
+
     height: auto;
     flex-direction: column;
     margin-bottom: 2rem;
+}
+.descripcion_producto-precio {
+    padding: 1em 0em;
+    font-weight: bold;
+    color: brown;
 }
 .contenedor-boton_whatsapp {
     display: flex;
@@ -229,6 +237,94 @@ input[type="checkbox"] {
 
 /* <--FIN WHATSAPP BTN --> */
 
+/* <-- INICIO FOOTER --> */
+footer {
+    margin-bottom: auto;
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.footer_titulo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 15px;
+}
+
+.social_media {
+    display: flex;
+    justify-content: center;
+}
+
+.social_media .icon {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 30px 10px 30px 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    cursor: pointer;
+}
+
+.facebook {
+    color: blue;
+}
+.facebook:hover {
+    color: rgb(0, 0, 97);
+}
+
+.instagram {
+    color: rgb(184, 0, 113);
+}
+.instagram:hover {
+    color: rgb(98, 0, 61);
+}
+
+.whatsapp {
+    color: #46c756;
+}
+.whatsapp:hover {
+    color: #46c756;
+}
+
+.creditos {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+    font-size: 15px;
+    color: white;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+.creditos_link {
+    color: #ff9100;
+    text-align: center;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+.creditos_link:visited {
+    color: #ff9100;
+}
+/* <-- FIN FOOTER --> */
+
 @media screen and (min-width: 500px) {
     .popup__wrapper {
         height: 95%;
@@ -244,7 +340,7 @@ input[type="checkbox"] {
         color: rgb(0, 0, 0);
     }
     .popup__overlay {
-        background: #000000b0;
+        background: #000000de;
     }
     .contenido_modal {
         display: flex;
@@ -252,11 +348,12 @@ input[type="checkbox"] {
         align-items: flex-start;
         height: rgba(0, 0, 0, 0.5);
     }
-
     .contenedor-imagen_modal {
         background-color: #46c756;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
+        border-top-right-radius: 0px;
+
         height: 100%;
         width: 50%;
         max-width: 600px;
@@ -274,18 +371,25 @@ input[type="checkbox"] {
         width: 50%;
         padding: 0rem 0rem 1rem 0rem;
     }
+
+    .descipcion_producto-titulo {
+        margin: 1em 0em;
+        text-align: center;
+        font-size: 2rem;
+    }
     .descripcion_producto {
         padding: 20px;
         flex-direction: column;
         margin-bottom: 0;
-    }
-    .descipcion_producto-titulo {
-        position: sticky;
         text-align: center;
-        margin: 1em 0em;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
-
+    .descripcion_producto-precio {
+        text-align: center;
+        color: brown;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
     .contenedor-boton_whatsapp {
         display: flex;
         justify-content: center;
@@ -297,15 +401,16 @@ input[type="checkbox"] {
         color: white;
     }
 }
+
 @media screen and (min-width: 1024px) {
     .popup__wrapper {
         max-height: 600px;
         max-width: 1200px;
     }
     .descipcion_producto-titulo {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .descripcion_producto {
-        padding: 3rem;
+        padding: 1rem;
     }
 }
