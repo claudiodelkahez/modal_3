@@ -9,8 +9,24 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+}
+header {
+    width: 100%;
+    height: 300px;
+    background-color: sienna;
 }
 
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: 2rem;
+}
+section {
+    width: 100%;
+    max-width: 800px;
+    background-color: aquamarine;
+}
 /* ESTILOS PRODUCTOS */
 
 .producto {
@@ -19,7 +35,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     border-bottom: dashed 1px rgb(0, 0, 0);
 }
 
@@ -83,8 +99,8 @@ input[type="checkbox"] {
     position: fixed;
     z-index: 9;
     max-width: 1000px;
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -93,16 +109,24 @@ input[type="checkbox"] {
     background: #fff;
 }
 .popup__close {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     position: absolute;
-    top: 0px;
-    right: 10px;
+    right: 8px;
     text-decoration: none;
     font-weight: bold;
     transform: scale(1);
     font-family: "Poppins", sans-serif;
 }
-
+.popup__close-background {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #fff;
+    width: 20px;
+    padding: 15px;
+    height: 20px;
+    border-radius: 50%;
+}
 .popup__close:visited {
     color: #000000;
 }
@@ -118,38 +142,51 @@ input[type="checkbox"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.contenedor-imagen_modal {
-    margin-bottom: 1rem;
     height: 100%;
+}
+
+.contenedor-imagen_modal {
+
+    height: 50%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .contenedor-imagen_modal img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
 }
 .contenedor-info {
     overflow-y: scroll;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 0rem 1rem 1rem 1rem;
 }
 .descipcion_producto-titulo {
-    margin-bottom: 1rem;
-    font-size: 2rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.4rem;
 }
 .descripcion_producto {
+    height: auto;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
+.contenedor-boton_whatsapp {
+    display: flex;
+    justify-content: center;
 
+}
 .boton_whatsapp {
-    justify-content: flex-end;
-    background-color: chartreuse;
+    background-color: #46c756;
     padding: 1rem;
-    margin-top: 2rem;
     border-radius: 0.5rem;
     text-decoration: none;
     font-weight: bold;
 }
-
+.boton_whatsapp:visited {
+    color: white;
+}
 /* <--INICIO WHATSAPP BTN */
 
 .btn_whatsapp {
@@ -187,45 +224,77 @@ input[type="checkbox"] {
 
 /* <--FIN WHATSAPP BTN --> */
 
-/* @media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) {
     .popup__wrapper {
-        height: 100%;
-        max-height: 600px;
-        width: 100%;
+        height: 95%;
+        max-height: 400px;
+        width: 90%;
         max-width: 1200px;
         padding: 0px;
     }
     .contenido_modal {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-items: flex-start;
         height: 100%;
-    }
-    .contenedor-info {
-        width: 50%;
-        height: 100%;
-        padding: 4rem 4rem 4rem 4rem;
     }
 
-    .boton_whatsapp {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-    }
     .contenedor-imagen_modal {
-        
-        max-width: 100%;
-        margin-bottom: 0rem;
-        
-    }
-    .contenedor-imagen_modal img {
-        object-fit: cover;
-        object-position: center;
-
+        background-color: #46c756;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
-     
+        height: 100%;
+        width: 50%;
+        max-width: 600px;
+        margin-bottom: 0rem;
+    }
+    .contenedor-imagen_modal img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .contenedor-info {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        padding: 0rem 0rem 1rem 0rem;
+    }
+    .descripcion_producto {
+        padding: 20px;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .descipcion_producto-titulo {
+        position: sticky;
+        text-align: center;
+        margin: 1em 0em;
+        font-size: 1.4rem;
+    }
+
+    
+    .contenedor-boton_whatsapp {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: auto;
+    }
+
+    .boton_whatsapp:visited {
+        color: white;
     }
 }
+@media screen and (min-width: 1024px) {
 
- */
+    .popup__wrapper {
+        max-height: 600px;
+        max-width: 1200px;
+    }
+    .descipcion_producto-titulo {
+        font-size: 2rem;
+    }
+    .descripcion_producto {
+        padding: 3rem;
+        
+    }
+}
