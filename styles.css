@@ -244,7 +244,7 @@ input[type="checkbox"] {
         color: rgb(0, 0, 0);
     }
     .popup__overlay {
-        background: #000000;
+        background: #000000b0;
     }
     .contenido_modal {
         display: flex;
