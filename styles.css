@@ -2,7 +2,34 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+h1 a,
+a:visited {
+    color: rgb(19, 19, 19);
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(0deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
 
 body {
     display: flex;
@@ -10,20 +37,64 @@ body {
     align-items: center;
     width: 100%;
 }
+
+
 header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    height: 300px;
-    background-color: rgb(0, 0, 0);
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
 h1 {
-    color: #fff;
-    text-align: center;
-    margin-top: 2rem;
+    font-size: 30px;
 }
+.header_img {
+    text-align: center;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cabecera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.cabecera_descripcion {
+    font-size: 14px;
+}
+
+
+.header_titulo {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+
+    border-top: dotted 1px grey;
+    border-bottom: dotted 1px grey;
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+}
+
 section {
     width: 100%;
-    max-width: 800px;
+    max-width: 600px;
 }
 /* ESTILOS PRODUCTOS */
 
@@ -34,7 +105,8 @@ section {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    border-bottom: dashed 1px rgb(0, 0, 0);
+    border-bottom: dotted 1px grey;
+
 }
 
 .producto_titulo {
@@ -239,11 +311,17 @@ input[type="checkbox"] {
 
 /* <-- INICIO FOOTER --> */
 footer {
-    margin-bottom: auto;
-    background: rgb(0, 0, 0);
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
+
+    margin-bottom: auto;
+    padding-top: 50px;
+
+    background: #1f201b;
+    
     width: 100%;
 }
 
@@ -261,12 +339,15 @@ footer {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
-    padding: 20px 15px;
+    padding: 0px 15px;
+    margin-top: 50px;
+
 }
 
 .social_media {
     display: flex;
     justify-content: center;
+
 }
 
 .social_media .icon {
@@ -346,7 +427,6 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        height: rgba(0, 0, 0, 0.5);
     }
     .contenedor-imagen_modal {
         background-color: #46c756;
