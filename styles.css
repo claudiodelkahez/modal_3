@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+html {
+    font-size: 62.5%;
 }
 a {
     color: rgb(255, 255, 255);
@@ -18,19 +21,6 @@ a:visited {
     color: rgb(19, 19, 19);
 }
 
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: rotateX(0deg);
-    }
-
-    to {
-        opacity: 1;
-        transform: rotateX(0deg);
-    }
-}
-
-
 body {
     display: flex;
     flex-direction: column;
@@ -38,19 +28,17 @@ body {
     width: 100%;
 }
 
-
 header {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
     padding-bottom: 20px;
-    font-size: 30px;
     text-align: center;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 3rem;
 }
 .header_img {
     text-align: center;
@@ -67,9 +55,8 @@ h1 {
 }
 
 .cabecera_descripcion {
-    font-size: 14px;
+    font-size: 1.4rem;
 }
-
 
 .header_titulo {
     display: flex;
@@ -106,10 +93,10 @@ section {
     width: 100%;
     max-width: 1200px;
     border-bottom: dotted 1px grey;
-
 }
 
 .producto_titulo {
+    font-size: 2.5rem;
     padding-bottom: 1em;
 }
 .contenedor-producto_imagen {
@@ -127,11 +114,15 @@ section {
 }
 
 .producto_descripcion {
+    font-size: 1.6rem;
+
     text-align: center;
     margin-top: 1rem;
 }
 .producto_precio {
-    color: indigo;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: rgb(105, 1, 27);
 }
 
 /* ESTILOS PRODUCTOS */
@@ -242,29 +233,34 @@ input[type="checkbox"] {
     padding: 0rem 0rem 2.5rem 0rem;
 }
 
-.descipcion_producto-titulo {
-    padding-bottom: .5em;
-    font-size: 1.6rem;
+.descripcion_producto-titulo {
+    padding-bottom: 0.5em;
+    font-size: 3rem;
     text-align: center;
     color: brown;
     font-weight: 900;
-    border-bottom:  1px dotted grey;
+    border-bottom: 1px dotted grey;
 }
 .descripcion_producto-texto {
-    padding: .5rem ;
+    font-size: 1.6rem;
+
+    padding: 0.5rem;
 }
 .descripcion_producto-precio {
     padding-top: 1em;
+    font-size: 1.6rem;
     font-weight: 900;
-text-transform: capitalize;
+    text-transform: capitalize;
     color: brown;
 }
 .contenedor-boton_whatsapp {
-
     display: flex;
     justify-content: center;
 }
 .boton_whatsapp {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1.6rem;
     margin-top: auto;
     background-color: #46c756;
     padding: 1rem;
@@ -285,7 +281,7 @@ text-transform: capitalize;
     position: fixed;
     width: 55px;
     height: 55px;
-    line-height: 55px;
+    line-height: 50px;
     bottom: 15px;
     right: 15px;
     background: #46c756;
@@ -296,6 +292,7 @@ text-transform: capitalize;
     box-shadow: 0px 1px 10px rgba(red, green, blue, 0.3);
     z-index: 100;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
 }
 
 .btn_whatsapp:visited {
@@ -309,6 +306,8 @@ text-transform: capitalize;
 
 .btn_whatsapp:hover {
     text-decoration: none;
+    transform: scale(1.2);
+
     color: #46c756;
     background: #fff;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -318,46 +317,43 @@ text-transform: capitalize;
 
 /* <-- INICIO FOOTER --> */
 footer {
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
-
     margin-bottom: auto;
-    padding-top: 50px;
+    color: #273036;
+    background: #f3f4f5;
+    border-top: solid 1px #e3e4e5;
 
-    background: #1f201b;
-    
     width: 100%;
 }
-.footer_descripcion {
-    color: #fff;
+.footer_titulo {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1em;
 }
-
+.footer_descripcion {
+    font-size: 1.4rem;
+}
 .contacto {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.footer_titulo {
+.nuestras_redes-titulo {
     display: flex;
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
-    color: #fff;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
-    padding: 0px 15px;
-    margin-top: 50px;
-
+    padding: 1em;
 }
 
 .social_media {
     display: flex;
     justify-content: center;
-
 }
 
 .social_media .icon {
@@ -377,44 +373,52 @@ footer {
 
 .facebook {
     color: blue;
+    transform: scale(1);
 }
 .facebook:hover {
     color: rgb(0, 0, 97);
+    transform: scale(1.2);
 }
 
 .instagram {
     color: rgb(184, 0, 113);
+    transform: scale(1);
 }
 .instagram:hover {
+    transform: scale(1.2);
     color: rgb(98, 0, 61);
-}
-
-.whatsapp {
-    color: #46c756;
-}
-.whatsapp:hover {
-    color: #46c756;
 }
 
 .creditos {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 15px 0px;
     font-size: 15px;
-    color: white;
     width: 100%;
-    background: rgb(255, 255, 255);
+    border-top: solid 1px #e3e4e5;
 }
+
 .creditos_link {
-    color: #ff9100;
-    text-align: center;
+    color: orange;
+
     text-transform: lowercase;
     text-decoration: none;
+    transform: scale(1);
 }
-.creditos_link:visited {
-    color: #ff9100;
+.creditos_link:hover {
+    color: orange;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+.creditos_link:visited,
+.creditos_link:focus {
+    color: rgb(151, 98, 0);
 }
 /* <-- FIN FOOTER --> */
+
+/* <-- MEDIA QUERIES --> */
 
 @media screen and (min-width: 500px) {
     .popup__wrapper {
@@ -434,6 +438,8 @@ footer {
         background: #000000de;
     }
     .contenido_modal {
+        height: 100%;
+
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -447,7 +453,8 @@ footer {
         height: 100%;
         width: 50%;
         max-width: 600px;
-        margin-bottom: 0rem;
+        padding: 0rem;
+        margin: 0rem;
     }
     .contenedor-imagen_modal img {
         height: 100%;
@@ -459,26 +466,30 @@ footer {
         flex-direction: column;
         height: 100%;
         width: 50%;
-        padding: 0rem 0rem 1rem 0rem;
+        padding: 0rem;
     }
 
-    .descipcion_producto-titulo {
-        margin: 1em 0em;
+    .descripcion_producto-titulo {
         text-align: center;
+        font-weight: 900;
         font-size: 2rem;
     }
+    .descripcion_producto-texto {
+        font-size: 1.6rem;
+    }
     .descripcion_producto {
-        padding: 20px;
+        height: 100%;
+        padding: 2rem 1rem 1rem 1rem;
         flex-direction: column;
         margin-bottom: 0;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .descripcion_producto-precio {
         text-align: center;
         color: brown;
         font-weight: 800;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
     .contenedor-boton_whatsapp {
         display: flex;
@@ -486,21 +497,35 @@ footer {
         align-items: flex-end;
         margin-top: auto;
     }
-
+    .boton_whatsapp {
+        position: absolute;
+        bottom: 1rem;
+    }
     .boton_whatsapp:visited {
         color: white;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
     .popup__wrapper {
         max-height: 600px;
         max-width: 1200px;
     }
-    .descipcion_producto-titulo {
+    .descripcion_producto-titulo {
+        font-size: 4rem;
+    }
+
+    .descripcion_producto {
+        height: 100%;
+        padding: 2rem;
+    }
+    .descripcion_producto-texto {
         font-size: 3rem;
     }
-    .descripcion_producto {
-        padding: 1rem;
+    .descripcion_producto-precio {
+        font-size: 2rem;
+    }
+    .boton_whatsapp {
+        bottom: 5rem;
     }
 }
