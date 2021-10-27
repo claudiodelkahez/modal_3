@@ -428,11 +428,15 @@ footer {
         max-width: 1200px;
         padding: 0px;
     }
+    .popup__close-background {
+       
+        background-color: transparent;
+    }
     .popup__close {
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
     }
     .popup__close:visited {
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
     }
     .popup__overlay {
         background: #000000de;
@@ -512,6 +516,18 @@ footer {
         max-height: 600px;
         max-width: 1200px;
     }
+    .popup__close {
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+    }
+    .popup__close {
+        font-size: 3rem;
+    }
+    .popup__close:visited {
+        background-color: transparent;
+
+        color: rgb(0, 0, 0);
+    }
     .descripcion_producto-titulo {
         font-size: 4rem;
     }
@@ -521,10 +537,11 @@ footer {
         padding: 2rem;
     }
     .descripcion_producto-texto {
+        margin-top: 1em;
         font-size: 3rem;
     }
     .descripcion_producto-precio {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .boton_whatsapp {
         bottom: 5rem;
