@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
 }
 a {
     color: rgb(255, 255, 255);
@@ -80,7 +80,7 @@ h1 {
 
     text-align: center;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 800;
 
     border-top: dotted 1px grey;
     border-bottom: dotted 1px grey;
@@ -232,33 +232,40 @@ input[type="checkbox"] {
     object-position: center;
 }
 .contenedor-info {
+    max-height: 300px;
     overflow-y: scroll;
     padding: 0rem 1rem 1rem 1rem;
 }
-.descipcion_producto-titulo {
-    margin-bottom: 1em;
-    font-size: 1.4rem;
-    text-align: center;
-    color: brown;
-}
 .descripcion_producto {
     text-align: center;
-    padding-top: 1em;
-
-    height: auto;
     flex-direction: column;
-    margin-bottom: 2rem;
+    padding: 0rem 0rem 2.5rem 0rem;
+}
+
+.descipcion_producto-titulo {
+    padding-bottom: .5em;
+    font-size: 1.6rem;
+    text-align: center;
+    color: brown;
+    font-weight: 900;
+    border-bottom:  1px dotted grey;
+}
+.descripcion_producto-texto {
+    padding: .5rem ;
 }
 .descripcion_producto-precio {
-    padding: 1em 0em;
-    font-weight: bold;
+    padding-top: 1em;
+    font-weight: 900;
+text-transform: capitalize;
     color: brown;
 }
 .contenedor-boton_whatsapp {
+
     display: flex;
     justify-content: center;
 }
 .boton_whatsapp {
+    margin-top: auto;
     background-color: #46c756;
     padding: 1rem;
     border-radius: 0.5rem;
@@ -323,6 +330,9 @@ footer {
     background: #1f201b;
     
     width: 100%;
+}
+.footer_descripcion {
+    color: #fff;
 }
 
 .contacto {
@@ -467,7 +477,7 @@ footer {
     .descripcion_producto-precio {
         text-align: center;
         color: brown;
-        font-weight: bold;
+        font-weight: 800;
         font-size: 1.2rem;
     }
     .contenedor-boton_whatsapp {
