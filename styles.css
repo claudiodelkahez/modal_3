@@ -33,16 +33,16 @@ header {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
     text-align: center;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .header_img {
     text-align: center;
-    width: 200px;
+    width: 20rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
+    padding: 2rem 0rem;
 }
 
 .cabecera_descripcion {
@@ -62,11 +62,11 @@ h1 {
     display: flex;
     justify-content: center;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
     text-align: center;
-    font-size: 15px;
+    font-size: 1.4rem;
     font-weight: 800;
 
     border-top: dotted 1px grey;
@@ -86,21 +86,22 @@ section {
 /* ESTILOS PRODUCTOS */
 
 .producto {
-    padding: 20px;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 120rem;
     border-bottom: dotted 1px grey;
 }
 
 .producto_titulo {
     font-size: 2.5rem;
+    text-align: center;
     padding-bottom: 1em;
 }
 .contenedor-producto_imagen {
-    height: 150px;
+    height: 20rem;
     transform: scale(1);
 }
 .contenedor-producto_imagen:hover {
@@ -166,18 +167,18 @@ input[type="checkbox"] {
     transform: translate(-50%, -50%);
     z-index: 9;
 
-    height: 90%;
-    width: 90%;
+    height: 95%;
+    width: 95%;
     border-radius: 8px;
 
     background: #fff;
 }
 .popup__close {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     position: absolute;
     top: 4px;
-    right: 7px;
-    color: rgb(83, 83, 83);
+    right: 8px;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
     transform: scale(1);
@@ -191,6 +192,7 @@ input[type="checkbox"] {
     padding: 15px;
     height: 20px;
     border-radius: 50%;
+    background-color: #000000;
 }
 .popup__close:visited {
     color: #fff;
@@ -225,29 +227,26 @@ input[type="checkbox"] {
 .contenedor-info {
     max-height: 300px;
     overflow-y: scroll;
-    padding: 0rem 1rem 1rem 1rem;
 }
 .descripcion_producto {
     text-align: center;
     flex-direction: column;
-    padding: 0rem 0rem 2.5rem 0rem;
+    padding: 0rem 0.7rem 0rem 0.7rem;
 }
 
 .descripcion_producto-titulo {
     padding-bottom: 0.5em;
-    font-size: 3rem;
-    text-align: center;
+    font-size: 2.4rem;
     color: brown;
     font-weight: 900;
     border-bottom: 1px dotted grey;
 }
 .descripcion_producto-texto {
     font-size: 1.6rem;
-
-    padding: 0.5rem;
+    padding: 0rem 0.5rem;
 }
 .descripcion_producto-precio {
-    padding-top: 1em;
+    padding-top: 0.5em;
     font-size: 1.6rem;
     font-weight: 900;
     text-transform: capitalize;
@@ -263,14 +262,14 @@ input[type="checkbox"] {
     font-size: 1.6rem;
     margin-top: auto;
     background-color: #46c756;
-    padding: 1rem;
+    padding: 0.5rem 1rem 0.7rem 1rem;
     border-radius: 0.5rem;
     text-decoration: none;
     font-weight: bold;
     transform: scale(1);
 }
 .boton_whatsapp:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 .boton_whatsapp:visited {
     color: white;
@@ -429,10 +428,10 @@ footer {
         padding: 0px;
     }
     .popup__close {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
     .popup__close:visited {
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
     }
     .popup__overlay {
         background: #000000de;
@@ -475,6 +474,7 @@ footer {
         font-size: 2rem;
     }
     .descripcion_producto-texto {
+        margin-top: 1rem;
         font-size: 1.6rem;
     }
     .descripcion_producto {
